@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Counter from "./components/counter";
 import TextField from "./components/TextField";
 import MapExample from "./components/MapExample";
+import Users from "./pages/Users";
 
 function App() {
 
@@ -37,17 +38,18 @@ function App() {
   
 
   return (
-    <div className="App">
-      <Button text="Botón de prueba" onClick={() => setTest(Math.random())} />
-      <TextField />
+    // <div className="App">
+    //   <Button text="Botón de prueba" onClick={() => setTest(Math.random())} />
+    //   <TextField />
 
-      {/* { timer && <Counter test={test} /> } */}
-      <Counter test={test} /> 
+    //   {/* { timer && <Counter test={test} /> } */}
+    //   <Counter test={test} /> 
 
-      <h1>{test}</h1>
+    //   <h1>{test}</h1>
 
-      <MapExample />
-    </div>
+    //   <MapExample />
+    // </div>
+    <Users />
   );
 }
 
